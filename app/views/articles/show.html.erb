@@ -1,13 +1,15 @@
-<h1>Showing selected article</h1>
+<% content_for :body do %>  
+  <h1>Showing selected article</h1>
 
-<p>
-  Title: <br> <%= @article.title %>
-</p>
+  <p>
+    Title: <br> <%= @article.title %>
+  </p>
 
-<p>
-  Description: <br> <%= @article.description %>
-</p>
+  <p>
+    Description: <br> <%= @article.description %>
+  </p>
 
-<%= link_to "Edit this article", edit_article_path(@article) %> |
+  <%= link_to "Edit this article", edit_article_path(@article) %> |
 
-<%= link_to "Back to articles listing", articles_path %>
+  <%= link_to "Back to articles listing", articles_path %>
+<% end %>

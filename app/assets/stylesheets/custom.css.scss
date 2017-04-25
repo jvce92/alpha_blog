@@ -1,2 +1,71 @@
+$navbar-default-bg: #4b4b4b;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #b9c9d1;
+  text-decoration: none;
+}
+
+#nav-link {
+  color: #fff;
+}
+
+#nav-link:hover {
+  color: #b9c9d1;
+}
+
+.landing {
+  text-align: center;
+  background-image: asset_url('cover.jpg');
+  background-size: cover;
+  height: 380px;
+}
+
+.landing h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.btn-xlarge {
+  font-size: 1.7em;
+  // background-color: #000000;
+  // color: #fff;
+}
+
+.container-landing {
+  width: 90%;
+}
+
+.container-footer {
+  width: 90%;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+
+
+
+
