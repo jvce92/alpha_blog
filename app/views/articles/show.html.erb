@@ -5,6 +5,9 @@
   </h2>
 
   <div class="well col-xs-8 col-xs-offset-2">
+    
+    <%= render 'users/listing', obj: Array(@article.user) if @article.user? %>
+
     <h4 class="center description"><strong>Description:</strong></h4>
     <hr>
      <%= simple_format(@article.description) %>
