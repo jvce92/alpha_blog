@@ -1,0 +1,47 @@
+<%= render 'shared/errors', obj: @user %>
+<div class="row">
+  <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+    <%= form_for(@user, :html => {class: "form-horizontal", role: "form"}) do |f| %>
+      
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="article-title">
+          <%= f.label :username %><br>
+        </label>
+        <div class="col-xs-8">
+          <%= f.text_field :username , class: "form-control", id: "article-title", placeholder: "User name", autofocus: true  %>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="article-description">
+          <%= f.label :email %><br>
+        </label>
+        <div class="col-xs-8">
+          <%= f.email_field :email , class: "form-control", id: "article-description", placeholder: "Email", autofocus: true  %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="article-description">
+          <%= f.label :password %><br>
+        </label>
+        <div class="col-xs-8">
+          <%= f.password_field :password , class: "form-control", id: "article-description", placeholder: "Password", autofocus: true  %>
+        </div>
+      </div>
+      
+      <div class ="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+          <%= f.submit(@user.new_record? ? "Sign-up" : "Update Account", class: "btn btn-primary btn-lg") %>
+        </div>
+      </div>
+      
+    <% end %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-5">
+    [ <%= link_to "Cancel and return to articles listing", articles_path %> ]
+  </div>
+</div>
