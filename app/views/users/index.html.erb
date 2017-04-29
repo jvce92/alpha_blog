@@ -1,5 +1,12 @@
 <% content_for :body do %>
 <h1 align="center">AlphaBloggers</h1>
 
+<div align="center">
+  <%= will_paginate %>
+</div>
 <%= render 'listing', obj: @users %>
+<div align="center">
+  <%= will_paginate %>
+</div>
+
 <% end %>
