@@ -106,3 +106,21 @@ footer a:hover {
   padding-left: 0;
 }
 
+.badge {
+  background-color: #2865a9;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  color: #cacccc;
+  text-align: center;
+}
+
+.badge a {
+  color: #fff;
+  text-align: center;
+}
+
+.input-checkbox {
+  width: auto !important;
+}
+
